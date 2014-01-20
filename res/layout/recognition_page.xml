@@ -1,0 +1,124 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal"
+    android:background="@drawable/backrepeat"
+    >
+
+<LinearLayout 
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    >
+
+    <RelativeLayout 
+    	android:layout_width="0dp"
+    	android:layout_weight="0.45"
+    	android:layout_height="fill_parent"
+    	android:background="@color/black"> 
+	    <RelativeLayout 
+	    	android:layout_width="300dp"
+	    	android:layout_height="300dp"
+	    	android:id="@+id/frcamerasurfacelayout"
+	    	android:layout_centerVertical="true">       
+		    <org.opencv.android.JavaCameraView
+		        android:layout_width="fill_parent"
+		        android:layout_height="fill_parent"
+		        android:id="@+id/fr_activity_surface_view" />
+	    </RelativeLayout>
+    </RelativeLayout>
+
+ 
+ 
+    <RelativeLayout 
+        android:layout_width="0dp"
+        android:layout_weight=".55"
+	     android:layout_height="fill_parent"
+	 >
+	    	
+        <RelativeLayout 
+            android:layout_width="171dp"
+	        android:layout_height="171dp"
+	        android:background="@drawable/borders"
+	        android:id="@+id/imglyt">
+	     	<ImageView
+	        android:id="@+id/frcapturedImage"
+	        android:layout_width="170dp"
+	        android:layout_height="170dp"
+	        android:src="@drawable/icon" /> 
+        </RelativeLayout>	
+
+	<Button 
+	     android:id="@+id/frcapturebutton"
+	     android:layout_width="fill_parent"
+	     android:layout_height="50dp"
+	 	 android:layout_below="@id/imglyt"
+	 	 android:layout_marginLeft="50dp"
+	 	 android:layout_marginTop="10dp"
+	     android:text="Start Capturing"
+	     android:textSize="15dp"
+	     android:textColor="@color/white"
+	     android:background="@drawable/capturestart"/>
+
+	<Button 
+	     android:id="@+id/frrecognizebutton"
+	     android:layout_width="fill_parent"
+	     android:layout_height="50dp"
+	 	 android:layout_below="@id/frcapturebutton"
+	 	 android:layout_marginLeft="50dp"
+	 	 android:layout_marginRight="50dp"
+	 	 android:layout_marginTop="10dp"
+		 android:layout_centerHorizontal="true"
+		 android:visibility="gone"
+	     android:text="Recognize"
+	     android:textSize="15dp"
+	     android:background="@drawable/recognize"
+	     android:textColor="@color/white"/>
+	 <ImageView
+        android:id="@+id/frbackbutton"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="5dp"
+        android:src="@drawable/backbutton" />
+	 <LinearLayout 
+	    android:layout_width="171dp"
+	    android:layout_height="171dp"
+	    android:id="@+id/frresultLayout"
+	    android:background="@drawable/borders"
+	    android:orientation="vertical"
+	    android:visibility="gone"
+	    >
+	     <TextView 
+		    android:layout_width="fill_parent"
+		    android:layout_height="0dp"
+		    android:layout_weight="1"
+		    android:gravity="center"
+		    android:text="Result"
+	    android:background="@drawable/borders"
+		    android:id="@+id/frresultheader"
+	         />
+	     <ImageView 
+		    android:layout_width="fill_parent"
+		    android:layout_height="0dp"
+		    android:layout_weight="4"
+	    android:background="@drawable/borders"
+		    android:id="@+id/frresultimage"
+		    />
+	     <TextView 
+		    android:layout_width="fill_parent"
+		    android:layout_height="0dp"
+		    android:layout_weight="1"
+		    android:gravity="center"
+	    android:background="@drawable/borders"
+		    android:id="@+id/frresulttextview"
+	         />
+	 </LinearLayout> 
+
+	</RelativeLayout>
+
+</LinearLayout>
+
+</RelativeLayout>

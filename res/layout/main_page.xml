@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:id="@+id/mainLayout"
+    android:background="@drawable/backrepeat"
+    >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp"
+        android:orientation="vertical" >
+        <RelativeLayout 
+            android:layout_width="fill_parent"
+		    android:layout_height="0dp"
+		    android:layout_weight=".13"
+		    android:orientation="vertical" 
+		    android:id="@+id/mainLayoutHeader"
+		    android:background="@color/green"
+	    >
+	        <ImageView
+		        android:id = "@+id/mainHeaderImage"
+		        android:layout_width="fill_parent"
+		        android:layout_height="fill_parent"
+		        android:src="@drawable/header"
+		        android:scaleType="fitXY"
+		        android:background="@color/transparent"
+		     ></ImageView>
+	          <ImageView
+		        android:id = "@+id/mainHeaderIcon"
+		        android:layout_width="fill_parent"
+		        android:layout_height="fill_parent"
+		        android:src="@drawable/headericon"
+		        android:scaleType="fitXY"
+		        android:background="@color/transparent"
+		     ></ImageView>
+	         <TextView
+	          	android:id = "@+id/mainHeaderText"
+		        android:layout_width="fill_parent"
+		        android:layout_height="fill_parent"
+		        android:background="@color/transparent"
+	          />
+        </RelativeLayout>
+         <RelativeLayout 
+            android:layout_width="fill_parent"
+		    android:layout_height="0dp"
+		    android:layout_weight=".77"
+		    android:orientation="vertical" 
+		    android:background="@color/transparent"
+	    >
+	        <ListView
+	            android:id="@+id/mainListView"
+	            android:layout_width="fill_parent"
+	            android:layout_height="fill_parent"
+	            android:divider="@null">
+	            
+	        </ListView>
+        </RelativeLayout>
+         <RelativeLayout 
+            android:id="@+id/main_page_adview_layout"
+            android:layout_width="fill_parent"
+		    android:layout_height="0dp"
+		    android:layout_weight=".10"
+		    android:orientation="vertical" 
+	    >
+	
+        </RelativeLayout>
+        
+    </LinearLayout>
+
+</RelativeLayout>

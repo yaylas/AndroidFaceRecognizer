@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:id="@+id/dbeditLayout"
+    android:background="@drawable/backrepeat"
+    >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp"
+        android:orientation="vertical" >
+        <RelativeLayout 
+            android:layout_width="fill_parent"
+		    android:layout_height="0dp"
+		    android:layout_weight=".13"
+		    android:orientation="vertical" 
+		    android:id="@+id/dbeditLayoutHeader"
+		    android:background="@color/green"
+	    >
+	        <ImageView
+		        android:id = "@+id/dbeditHeaderImage"
+		        android:layout_width="fill_parent"
+		        android:layout_height="fill_parent"
+		        android:src="@drawable/header"
+		        android:scaleType="fitXY"
+		        android:background="@color/transparent"
+		     ></ImageView>
+	         <TextView
+	          	android:id = "@+id/dbeditHeaderText"
+		        android:layout_width="fill_parent"
+		        android:layout_height="fill_parent"
+		        android:background="@color/transparent"
+	          />
+        </RelativeLayout>
+         <RelativeLayout 
+            android:layout_width="fill_parent"
+		    android:layout_height="0dp"
+		    android:layout_weight=".87"
+		    android:orientation="vertical" 
+		    android:background="@color/transparent"
+	    >
+	        <ListView
+	            android:id="@+id/dbeditListView"
+	            android:layout_width="fill_parent"
+	            android:layout_height="fill_parent"
+	            android:scrollbarThumbVertical="@drawable/scrollbarstyle">
+	        </ListView>
+        </RelativeLayout>
+        
+    </LinearLayout>
+
+</RelativeLayout>

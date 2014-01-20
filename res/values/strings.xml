@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Face Recognizer</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="splashImage">Splash Image</string>
+    <string name="splashdot">Splash Dot</string>
+    <string name="homePageBGImage">Home Page BG Image</string>
+
+</resources>

@@ -1,0 +1,331 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal"
+    android:background="@drawable/backrepeat"
+    >
+
+<LinearLayout 
+    android:id="@+id/face_detect_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal"
+    >
+
+    <RelativeLayout 
+    	android:layout_width="0dp"
+    	android:layout_weight=".45"
+    	android:layout_height="fill_parent"
+    	android:background="@color/black"> 
+	    <RelativeLayout 
+	    	android:layout_width="fill_parent"
+	    	android:layout_height="fill_parent"
+    		android:id="@+id/fdcamerasurfacelayout"
+	    	android:layout_centerVertical="true">       
+		    <org.opencv.android.JavaCameraView
+		        android:layout_width="fill_parent"
+		        android:layout_height="fill_parent"
+		        android:id="@+id/fd_activity_surface_view" />
+	    </RelativeLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight=".10"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/borders">
+    <RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="71dp"
+        android:id="@+id/imageViewWrapper1"
+        android:background="@drawable/borders">
+	    <ImageView
+	        android:id="@+id/imageView1"
+	        android:layout_width="70dp"
+	        android:layout_height="70dp"
+	        android:src="@drawable/icon" />
+	    <ImageView
+	        android:id="@+id/deleteIcon1"
+	        android:layout_width="20dp"
+	        android:layout_height="20dp"
+	        android:src="@drawable/deleteicon"
+	        android:layout_alignParentBottom="true"
+	        android:layout_alignParentRight="true"
+	        android:layout_marginRight="1dp"
+	        android:layout_marginTop="1dp" />
+        
+    </RelativeLayout>
+    <RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="71dp"
+        android:id="@+id/imageViewWrapper2"
+        android:background="@drawable/borders">
+        <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/icon" />
+        	    <ImageView
+	        android:id="@+id/deleteIcon2"
+	        android:layout_width="20dp"
+	        android:layout_height="20dp"
+	        android:src="@drawable/deleteicon"
+	        android:layout_alignParentBottom="true"
+	        android:layout_alignParentRight="true"
+	        android:layout_marginRight="1dp"
+	        android:layout_marginTop="1dp" />        
+    </RelativeLayout>
+    <RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="71dp"
+        android:id="@+id/imageViewWrapper3"
+        android:background="@drawable/borders">
+        <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/icon" />      
+        	    <ImageView
+	        android:id="@+id/deleteIcon3"
+	        android:layout_width="20dp"
+	        android:layout_height="20dp"
+	        android:src="@drawable/deleteicon"
+	        android:layout_alignParentBottom="true"
+	        android:layout_alignParentRight="true"
+	        android:layout_marginRight="1dp"
+	        android:layout_marginTop="1dp" />  
+    </RelativeLayout>
+    <RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="71dp"
+        android:id="@+id/imageViewWrapper4"
+        android:background="@drawable/borders">
+        <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/icon" /> 
+        	    <ImageView
+	        android:id="@+id/deleteIcon4"
+	        android:layout_width="20dp"
+	        android:layout_height="20dp"
+	        android:src="@drawable/deleteicon"
+	        android:layout_alignParentBottom="true"
+	        android:layout_alignParentRight="true"
+	        android:layout_marginRight="1dp"
+	        android:layout_marginTop="1dp" />       
+    </RelativeLayout>
+    <RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="71dp"
+        android:id="@+id/imageViewWrapper5"
+        android:background="@drawable/borders">
+        <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/icon" />      
+        	    <ImageView
+	        android:id="@+id/deleteIcon5"
+	        android:layout_width="20dp"
+	        android:layout_height="20dp"
+	        android:src="@drawable/deleteicon"
+	        android:layout_alignParentBottom="true"
+	        android:layout_alignParentRight="true"
+	        android:layout_marginRight="1dp"
+	        android:layout_marginTop="1dp" />  
+    </RelativeLayout>
+  
+    </LinearLayout>
+    
+    <LinearLayout
+	android:layout_width="0dp"
+    android:layout_weight=".10"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/borders">
+  	<RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="71dp"
+        android:id="@+id/imageViewWrapper6"
+        android:background="@drawable/borders">
+        <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/icon" />      
+        	    <ImageView
+	        android:id="@+id/deleteIcon6"
+	        android:layout_width="20dp"
+	        android:layout_height="20dp"
+	        android:src="@drawable/deleteicon"
+	        android:layout_alignParentBottom="true"
+	        android:layout_alignParentRight="true"
+	        android:layout_marginRight="1dp"
+	        android:layout_marginTop="1dp" />  
+    </RelativeLayout>
+  	<RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="71dp"
+        android:id="@+id/imageViewWrapper7"
+        android:background="@drawable/borders">
+        <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/icon" />      
+        	    <ImageView
+	        android:id="@+id/deleteIcon7"
+	        android:layout_width="20dp"
+	        android:layout_height="20dp"
+	        android:src="@drawable/deleteicon"
+	        android:layout_alignParentBottom="true"
+	        android:layout_alignParentRight="true"
+	        android:layout_marginRight="1dp"
+	        android:layout_marginTop="1dp" />  
+    </RelativeLayout>
+  	<RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="71dp"
+        android:id="@+id/imageViewWrapper8"
+        android:background="@drawable/borders">
+        <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/icon" />      
+        	    <ImageView
+	        android:id="@+id/deleteIcon8"
+	        android:layout_width="20dp"
+	        android:layout_height="20dp"
+	        android:src="@drawable/deleteicon"
+	        android:layout_alignParentBottom="true"
+	        android:layout_alignParentRight="true"
+	        android:layout_marginRight="1dp"
+	        android:layout_marginTop="1dp" />  
+    </RelativeLayout>
+  	<RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="71dp"
+        android:id="@+id/imageViewWrapper9"
+        android:background="@drawable/borders">
+        <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/icon" />      
+        	    <ImageView
+	        android:id="@+id/deleteIcon9"
+	        android:layout_width="20dp"
+	        android:layout_height="20dp"
+	        android:src="@drawable/deleteicon"
+	        android:layout_alignParentBottom="true"
+	        android:layout_alignParentRight="true"
+	        android:layout_marginRight="1dp"
+	        android:layout_marginTop="1dp" />  
+    </RelativeLayout>
+  	<RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="71dp"
+        android:id="@+id/imageViewWrapper10"
+        android:background="@drawable/borders">
+        <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/icon" />      
+        	    <ImageView
+	        android:id="@+id/deleteIcon10"
+	        android:layout_width="20dp"
+	        android:layout_height="20dp"
+	        android:src="@drawable/deleteicon"
+	        android:layout_alignParentBottom="true"
+	        android:layout_alignParentRight="true"
+	        android:layout_marginRight="1dp"
+	        android:layout_marginTop="1dp" />  
+    </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout 
+        android:layout_width="0dp"
+        android:layout_weight=".35"
+	     android:layout_height="fill_parent"
+	 >
+	
+	<ImageView
+	    android:id="@+id/capturebutton"
+	     android:layout_width="fill_parent"
+	     android:layout_height="50dp"
+	     android:layout_alignParentTop="true"
+	     android:layout_marginTop="10dp"
+	     android:layout_alignParentRight="true"
+	     android:layout_marginRight="15dp"
+	     android:layout_alignParentLeft="true"
+	     android:layout_marginLeft="15dp"
+	     android:text="Start Capturing"
+	     android:scaleType="fitXY"
+	     android:src="@drawable/capturestart"/>
+	<TextView
+	    android:id="@+id/capturetext"
+	     android:layout_width="fill_parent"
+	     android:layout_height="50dp"
+	     android:layout_alignParentTop="true"
+	     android:layout_marginTop="10dp"
+	     android:layout_alignParentRight="true"
+	     android:layout_marginRight="15dp"
+	     android:layout_alignParentLeft="true"
+	     android:layout_marginLeft="15dp"
+	     android:textSize="15dp"
+	     android:text="Start Capturing"
+	     android:textColor="@color/white"
+	     android:gravity="center"
+	     android:background="@color/transparent"/>
+	<EditText 
+	    android:id="@+id/nameedit"
+	     android:layout_width="fill_parent"
+	     android:layout_height="50dp"
+	     android:layout_below="@id/capturebutton"
+	     android:layout_marginTop="10dp"
+	     android:visibility="gone"
+	     android:hint="Enter Name"/>
+	<Button 
+	     android:id="@+id/addtodbbutton"
+	     android:layout_width="fill_parent"
+	     android:layout_height="50dp"
+	     android:layout_below="@id/nameedit"
+	     android:layout_marginTop="10dp"
+	     android:layout_alignParentRight="true"
+	     android:layout_marginRight="15dp"
+	     android:layout_alignParentLeft="true"
+	     android:layout_marginLeft="15dp"
+	     android:visibility="gone"
+	     android:textColor="@color/white"
+	     android:text="Add To Database"
+	     android:textSize="15dp"
+	     android:background="@drawable/update"/>
+	 <ImageView
+        android:id="@+id/backbutton"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/backbutton" />
+	 	<Button 
+	     android:id="@+id/deletefromdbbutton"
+	     android:layout_width="fill_parent"
+	     android:layout_height="50dp"
+	     android:visibility="gone"
+	     android:textColor="@color/white"
+	     android:text="Delete Person"
+	     android:textSize="15dp"
+	     android:background="@drawable/deletepersonbtn"/> 
+
+</RelativeLayout>
+</LinearLayout>
+
+
+</RelativeLayout>
